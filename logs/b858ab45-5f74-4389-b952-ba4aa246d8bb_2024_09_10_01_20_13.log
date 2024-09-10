@@ -1,0 +1,3 @@
+2024-09-10 01:20:13.126 | INFO     | src.api.routes:predict:31 - REQUEST ID -> b858ab45-5f74-4389-b952-ba4aa246d8bb_2024_09_10_01_20_13 : Request Recieved
+2024-09-10 01:20:13.131 | INFO     | src.api.routes:predict:32 - REQUEST ID -> b858ab45-5f74-4389-b952-ba4aa246d8bb_2024_09_10_01_20_13 : Request body is 'Dress 50-100 SAR'
+2024-09-10 01:20:13.154 | INFO     | src.api.routes:predict:40 - REQUEST ID -> b858ab45-5f74-4389-b952-ba4aa246d8bb_2024_09_10_01_20_13 : Model output is {"lower_range":50.0,"upper_range":-1.0,"unit":"SAR"}

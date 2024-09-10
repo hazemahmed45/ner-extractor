@@ -1,0 +1,3 @@
+2024-09-10 02:14:09.078 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 8019d20c-7fad-4ee8-abb6-a77ead4c3d68_2024_09_10_02_14_09 : Request Recieved
+2024-09-10 02:14:09.086 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 8019d20c-7fad-4ee8-abb6-a77ead4c3d68_2024_09_10_02_14_09 : Request body is 'Jacket for women Adidas Large Red less than 1000 SAR'
+2024-09-10 02:14:09.101 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 8019d20c-7fad-4ee8-abb6-a77ead4c3d68_2024_09_10_02_14_09 : Model output is {"lower_range":-1.0,"upper_range":1000.0,"unit":"SAR"}

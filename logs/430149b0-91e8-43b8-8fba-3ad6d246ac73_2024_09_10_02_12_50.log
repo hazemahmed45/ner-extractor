@@ -1,0 +1,3 @@
+2024-09-10 02:12:50.056 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 430149b0-91e8-43b8-8fba-3ad6d246ac73_2024_09_10_02_12_50 : Request Recieved
+2024-09-10 02:12:50.063 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 430149b0-91e8-43b8-8fba-3ad6d246ac73_2024_09_10_02_12_50 : Request body is 'بنطال بولو رجالى زيتى من مقاس متوسط لمقاس كبير  بسعر 200 ريال'
+2024-09-10 02:12:50.094 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 430149b0-91e8-43b8-8fba-3ad6d246ac73_2024_09_10_02_12_50 : Model output is {"lower_range":200.0,"upper_range":200.0,"unit":"riyal"}

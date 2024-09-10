@@ -1,0 +1,24 @@
+services:
+  ner-service-api:
+    build: .
+    depends_on:
+      duckling:
+        condition: service_started
+    env_file: ".env"
+    image: ner-extractor
+    environment:
+      - DUCKLING_HOST=duckling
+    ports:
+      - "8080:8080"
+    networks:
+      - api_bridge
+
+  duckling:
+    image: rasa/duckling
+    ports:
+      - "8000:8000"
+    networks:
+      - api_bridge
+networks:
+  api_bridge:
+    driver: bridge

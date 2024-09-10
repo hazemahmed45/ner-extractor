@@ -1,0 +1,3 @@
+2024-09-10 02:06:34.088 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 18c2b2c6-eed5-43a0-8565-73f9ff0f46f0_2024_09_10_02_06_34 : Request Recieved
+2024-09-10 02:06:34.091 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 18c2b2c6-eed5-43a0-8565-73f9ff0f46f0_2024_09_10_02_06_34 : Request body is 'ساعة كارتير vintage ارخص من ٢٠٠٠ ريال'
+2024-09-10 02:06:34.107 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 18c2b2c6-eed5-43a0-8565-73f9ff0f46f0_2024_09_10_02_06_34 : Model output is {"lower_range":2000.0,"upper_range":2000.0,"unit":"riyal"}

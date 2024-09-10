@@ -1,0 +1,3 @@
+2024-09-10 01:27:32.973 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 9545875b-74fd-4899-b6d1-43976b6a179a_2024_09_10_01_27_32 : Request Recieved
+2024-09-10 01:27:32.975 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 9545875b-74fd-4899-b6d1-43976b6a179a_2024_09_10_01_27_32 : Request body is 'Ted Baker bag less than 500 Riyal'
+2024-09-10 01:27:32.994 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 9545875b-74fd-4899-b6d1-43976b6a179a_2024_09_10_01_27_32 : Model output is {"lower_range":-1.0,"upper_range":500.0,"unit":"riyal"}

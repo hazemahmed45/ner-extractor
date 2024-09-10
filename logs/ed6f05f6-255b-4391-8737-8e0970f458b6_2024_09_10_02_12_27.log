@@ -1,0 +1,3 @@
+2024-09-10 02:12:27.679 | INFO     | src.api.routes:predict:31 - REQUEST ID -> ed6f05f6-255b-4391-8737-8e0970f458b6_2024_09_10_02_12_27 : Request Recieved
+2024-09-10 02:12:27.684 | INFO     | src.api.routes:predict:32 - REQUEST ID -> ed6f05f6-255b-4391-8737-8e0970f458b6_2024_09_10_02_12_27 : Request body is 'فستان أتش آند إم وردي Medium وسعره بين 700 ل 1000 ريال'
+2024-09-10 02:12:27.698 | INFO     | src.api.routes:predict:40 - REQUEST ID -> ed6f05f6-255b-4391-8737-8e0970f458b6_2024_09_10_02_12_27 : Model output is {"lower_range":700.0,"upper_range":1000.0,"unit":"riyal"}

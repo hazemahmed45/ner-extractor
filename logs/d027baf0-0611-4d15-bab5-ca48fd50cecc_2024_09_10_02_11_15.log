@@ -1,0 +1,3 @@
+2024-09-10 02:11:15.274 | INFO     | src.api.routes:predict:31 - REQUEST ID -> d027baf0-0611-4d15-bab5-ca48fd50cecc_2024_09_10_02_11_15 : Request Recieved
+2024-09-10 02:11:15.279 | INFO     | src.api.routes:predict:32 - REQUEST ID -> d027baf0-0611-4d15-bab5-ca48fd50cecc_2024_09_10_02_11_15 : Request body is 'ملمع شفاه  وردي لوريال 45ريال'
+2024-09-10 02:11:15.293 | INFO     | src.api.routes:predict:40 - REQUEST ID -> d027baf0-0611-4d15-bab5-ca48fd50cecc_2024_09_10_02_11_15 : Model output is {"lower_range":45.0,"upper_range":45.0,"unit":"riyal"}

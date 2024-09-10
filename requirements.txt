@@ -1,0 +1,7 @@
+fastapi==0.114.0
+fsspec==2024.9.0
+loguru==0.7.2
+requests==2.32.3
+gunicorn==23.0.0
+pydantic_settings==2.4.0
+uvicorn==0.30.6

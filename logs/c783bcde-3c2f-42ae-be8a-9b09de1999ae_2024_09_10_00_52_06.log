@@ -1,0 +1,2 @@
+2024-09-10 00:52:06.217 | INFO     | src.api.routes:predict:31 - REQUEST ID -> c783bcde-3c2f-42ae-be8a-9b09de1999ae_2024_09_10_00_52_06 : Request Recieved
+2024-09-10 00:52:06.221 | INFO     | src.api.routes:predict:32 - REQUEST ID -> c783bcde-3c2f-42ae-be8a-9b09de1999ae_2024_09_10_00_52_06 : Request body is 'تنورة 150 ريال'

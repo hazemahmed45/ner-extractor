@@ -1,0 +1,3 @@
+2024-09-10 02:12:17.912 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 37781da2-750e-4435-8963-74a9d87a2b18_2024_09_10_02_12_17 : Request Recieved
+2024-09-10 02:12:17.918 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 37781da2-750e-4435-8963-74a9d87a2b18_2024_09_10_02_12_17 : Request body is 'كريم أساس بيج مايبيلين 30 مل بسعر 60 ريال'
+2024-09-10 02:12:17.931 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 37781da2-750e-4435-8963-74a9d87a2b18_2024_09_10_02_12_17 : Model output is {"lower_range":60.0,"upper_range":60.0,"unit":"riyal"}

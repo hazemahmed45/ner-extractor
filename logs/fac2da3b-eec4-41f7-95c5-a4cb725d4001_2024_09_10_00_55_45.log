@@ -1,0 +1,3 @@
+2024-09-10 00:55:45.181 | INFO     | src.api.routes:predict:31 - REQUEST ID -> fac2da3b-eec4-41f7-95c5-a4cb725d4001_2024_09_10_00_55_45 : Request Recieved
+2024-09-10 00:55:45.183 | INFO     | src.api.routes:predict:32 - REQUEST ID -> fac2da3b-eec4-41f7-95c5-a4cb725d4001_2024_09_10_00_55_45 : Request body is 'Sneakers - 120 SAR'
+2024-09-10 00:55:45.203 | INFO     | src.api.routes:predict:40 - REQUEST ID -> fac2da3b-eec4-41f7-95c5-a4cb725d4001_2024_09_10_00_55_45 : Model output is {"lower_range":120.0,"upper_range":-1.0,"unit":"SAR"}

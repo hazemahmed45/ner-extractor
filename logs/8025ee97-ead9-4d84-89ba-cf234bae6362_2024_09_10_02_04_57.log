@@ -1,0 +1,3 @@
+2024-09-10 02:04:57.543 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 8025ee97-ead9-4d84-89ba-cf234bae6362_2024_09_10_02_04_57 : Request Recieved
+2024-09-10 02:04:57.548 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 8025ee97-ead9-4d84-89ba-cf234bae6362_2024_09_10_02_04_57 : Request body is 'شامبو لوريال للشعر التالف ٢٥٠ مل'
+2024-09-10 02:04:57.559 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 8025ee97-ead9-4d84-89ba-cf234bae6362_2024_09_10_02_04_57 : Model output is {"lower_range":-1.0,"upper_range":-1.0,"unit":""}

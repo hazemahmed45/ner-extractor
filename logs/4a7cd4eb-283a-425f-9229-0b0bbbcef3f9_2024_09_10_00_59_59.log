@@ -1,0 +1,3 @@
+2024-09-10 00:59:59.096 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 4a7cd4eb-283a-425f-9229-0b0bbbcef3f9_2024_09_10_00_59_59 : Request Recieved
+2024-09-10 00:59:59.098 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 4a7cd4eb-283a-425f-9229-0b0bbbcef3f9_2024_09_10_00_59_59 : Request body is 'Deodorant - $5'
+2024-09-10 00:59:59.115 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 4a7cd4eb-283a-425f-9229-0b0bbbcef3f9_2024_09_10_00_59_59 : Model output is {"lower_range":5.0,"upper_range":5.0,"unit":"$"}

@@ -1,0 +1,3 @@
+2024-09-10 01:26:40.346 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 0695f6a2-cb16-4df7-a679-4f1e94149f03_2024_09_10_01_26_40 : Request Recieved
+2024-09-10 01:26:40.348 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 0695f6a2-cb16-4df7-a679-4f1e94149f03_2024_09_10_01_26_40 : Request body is 'حقيبة كتف Gucci  200 dollar'
+2024-09-10 01:26:40.363 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 0695f6a2-cb16-4df7-a679-4f1e94149f03_2024_09_10_01_26_40 : Model output is {"lower_range":200.0,"upper_range":200.0,"unit":"$"}

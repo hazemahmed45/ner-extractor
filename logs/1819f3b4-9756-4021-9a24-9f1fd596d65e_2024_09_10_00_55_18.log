@@ -1,0 +1,3 @@
+2024-09-10 00:55:18.175 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 1819f3b4-9756-4021-9a24-9f1fd596d65e_2024_09_10_00_55_18 : Request Recieved
+2024-09-10 00:55:18.177 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 1819f3b4-9756-4021-9a24-9f1fd596d65e_2024_09_10_00_55_18 : Request body is 'برفان ٢٠٠ ريال سعودي'
+2024-09-10 00:55:18.199 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 1819f3b4-9756-4021-9a24-9f1fd596d65e_2024_09_10_00_55_18 : Model output is {"lower_range":200.0,"upper_range":-1.0,"unit":"SAR"}

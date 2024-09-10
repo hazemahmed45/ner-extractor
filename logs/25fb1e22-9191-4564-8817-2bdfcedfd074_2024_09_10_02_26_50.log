@@ -1,0 +1,3 @@
+2024-09-10 02:26:50.630 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 25fb1e22-9191-4564-8817-2bdfcedfd074_2024_09_10_02_26_50 : Request Recieved
+2024-09-10 02:26:50.641 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 25fb1e22-9191-4564-8817-2bdfcedfd074_2024_09_10_02_26_50 : Request body is 'شنطة يد كروس كروشيه اسود 200 ل300 ريال'
+2024-09-10 02:26:50.675 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 25fb1e22-9191-4564-8817-2bdfcedfd074_2024_09_10_02_26_50 : Model output is {"lower_range":300.0,"upper_range":300.0,"unit":"riyal"}

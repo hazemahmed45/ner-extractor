@@ -1,0 +1,3 @@
+2024-09-10 01:19:23.069 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 7ece1a60-e397-4954-bb34-1865b405523d_2024_09_10_01_19_23 : Request Recieved
+2024-09-10 01:19:23.082 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 7ece1a60-e397-4954-bb34-1865b405523d_2024_09_10_01_19_23 : Request body is 'فستان ٥٠ - ١٠٠  ريال'
+2024-09-10 01:19:23.094 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 7ece1a60-e397-4954-bb34-1865b405523d_2024_09_10_01_19_23 : Model output is {"lower_range":50.0,"upper_range":-1.0,"unit":"riyal"}

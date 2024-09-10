@@ -1,0 +1,3 @@
+2024-09-10 01:18:32.716 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 50dce888-d5a4-4a7c-969d-e1f9d035ac90_2024_09_10_01_18_32 : Request Recieved
+2024-09-10 01:18:32.719 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 50dce888-d5a4-4a7c-969d-e1f9d035ac90_2024_09_10_01_18_32 : Request body is 'فستان غالي'
+2024-09-10 01:18:32.740 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 50dce888-d5a4-4a7c-969d-e1f9d035ac90_2024_09_10_01_18_32 : Model output is {"lower_range":-1.0,"upper_range":-1.0,"unit":""}

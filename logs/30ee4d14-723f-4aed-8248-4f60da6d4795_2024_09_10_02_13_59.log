@@ -1,0 +1,3 @@
+2024-09-10 02:13:59.452 | INFO     | src.api.routes:predict:31 - REQUEST ID -> 30ee4d14-723f-4aed-8248-4f60da6d4795_2024_09_10_02_13_59 : Request Recieved
+2024-09-10 02:13:59.473 | INFO     | src.api.routes:predict:32 - REQUEST ID -> 30ee4d14-723f-4aed-8248-4f60da6d4795_2024_09_10_02_13_59 : Request body is 'شامبو هيد آند شولدرز للرجال بحجم 400 مل ولون أزرق من 30 ريال ل 100 ريال'
+2024-09-10 02:13:59.499 | INFO     | src.api.routes:predict:40 - REQUEST ID -> 30ee4d14-723f-4aed-8248-4f60da6d4795_2024_09_10_02_13_59 : Model output is {"lower_range":30.0,"upper_range":100.0,"unit":"riyal"}
