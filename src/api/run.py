@@ -1,10 +1,8 @@
 from src.api.app import create_app
-
-# from loguru import logger
 import uvicorn
 from fastapi import FastAPI
 from uvicorn.config import LOG_LEVELS
-from src.api.settings import ApiSettings
+from src.misc.settings import ApiSettings
 
 app: FastAPI = create_app()
 

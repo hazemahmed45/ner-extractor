@@ -1,5 +1,6 @@
 from abc import abstractmethod
 from typing import Any, Tuple, List, Dict, Union
+from src.misc.schemas import ProductNamedEntityExtractionSchema
 
 
 class BaseModel:
@@ -8,7 +9,7 @@ class BaseModel:
 
     def __call__(
         self, input_query: str, *args: Any, **kwds: Any
-    ) -> Tuple[bool, List[Dict[str, Union[int, str, float]]]]:
+    ) -> ProductNamedEntityExtractionSchema:
         return self.predict(input_query=input_query)
 
     @abstractmethod

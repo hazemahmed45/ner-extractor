@@ -1,6 +1,6 @@
 from pathlib import Path
 from fastapi import FastAPI, APIRouter
-from src.api.settings import ApiSettings
+from src.misc.settings import ApiSettings
 from src.api.price_extractor_routes import price_extractor_router
 
 
