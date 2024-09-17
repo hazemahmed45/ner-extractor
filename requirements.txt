@@ -6,4 +6,9 @@ requests==2.32.3
 numpy==1.26.4
 gunicorn==23.0.0
 pydantic_settings==2.4.0
+sentencepiece==0.2.0
+transformers==4.44.2
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.1.2
 uvicorn==0.30.6
+word2number==1.1
