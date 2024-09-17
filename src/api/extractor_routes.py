@@ -1,8 +1,9 @@
-from fastapi import APIRouter, status, Body
+import time
+from fastapi import APIRouter, status, Body, Response
 from fastapi.responses import JSONResponse
 from loguru import logger
 from src.misc.settings import ApiSettings
-from src.misc.schemas import PriceExtractionSchema, ProductNamedEntityExtractionSchema
+from src.misc.schemas import ProductNamedEntityExtractionSchema
 from src.models import ModelBuilder
 from src.misc.logger_handlers import FileHandler
 from src.misc.create_unique_id import create_unique_user_id
@@ -22,9 +23,11 @@ async def healthcheck():
 
 
 @price_extractor_router.post("/predict", tags=["Predict"])
-async def predict(
+async def ner_predict(
+    response: Response,
     input_query: str = Body(description="input query from the search bar"),
 ) -> ProductNamedEntityExtractionSchema:
+    request_tic = time.time()
     request_unique_id = create_unique_user_id()
     session_logger = logger.bind(user_unique_id=request_unique_id)
     session_logger.add(sink=FileHandler(user_unique_id=request_unique_id))
@@ -33,10 +36,15 @@ async def predict(
     session_logger.info(
         f"REQUEST ID -> {request_unique_id} : Request body is '{input_query}'"
     )
+    pred_tic = time.time()
     product_extraction_result: ProductNamedEntityExtractionSchema = model(
         input_query=input_query
     )
+    pred_toc = time.time()
     session_logger.info(
         f"REQUEST ID -> {request_unique_id} : Model output is {product_extraction_result.model_dump_json()}"
     )
+    request_toc = time.time()
+    response.headers["model-inference-time"] = str(pred_toc - pred_tic)
+    response.headers["request-time"] = str(request_toc - request_tic)
     return product_extraction_result

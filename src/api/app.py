@@ -1,7 +1,7 @@
 from pathlib import Path
 from fastapi import FastAPI, APIRouter
 from src.misc.settings import ApiSettings
-from src.api.price_extractor_routes import price_extractor_router
+from src.api.extractor_routes import price_extractor_router
 
 
 # def get_active_branch_name():
