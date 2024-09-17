@@ -17,11 +17,33 @@ class DucklingDimensionTypes(Enum):
 class ModelTypes(Enum):
     DUCKLING = "duckling"
     DUCKLING_OPERATOR = "duckling_operator"
+    T5_NER = "t5_ner"
 
 
-class FastTextOperatorClassTypes(Enum):
+class OperatorModelTypes(Enum):
+    FASTTEXT = "fasttext"
+    BERT = "bert"
+
+
+class OperatorClassTypes(Enum):
     EQ = "__label__EQ"
     LE = "__label__LE"
     GE = "__label__GE"
     GELE = "__label__GELE"
     NONE = "__label__NONE"
+
+
+class T5DomainClassTypes(Enum):
+    RATE = "[RATE]"
+    SPECS = "[SPECS]"
+    BRAND = "[BRAND]"
+    SUBCATEGORY = "[SUBCATEGORY]"
+    SUPERCATEGORY = "[SUPERCATEGORY]"
+    PRICE = "[PRICE]"
+
+
+class T5PriceSubclassTypes(Enum):
+    EQ = "EQ"
+    LE = "LE"
+    GE = "GE"
+    CURRENCY = "CURRENCY"
