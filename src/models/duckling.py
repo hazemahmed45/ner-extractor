@@ -24,6 +24,12 @@ class DucklingHTTPModel(BaseModel):
         super().__init__()
         self._duckling_url = f"http://{duckling_host}:{duckling_port}/parse"
         self._dim_types = dim_types
+        self.currency_pattern_map = {
+            "SAR": r"\b(ريال سعودي|ر\.س|ريال|SAR|saudi riyal|riyal|sr)\b",
+            "$": r"\b(دولار امريكي|دولار أمريكي|دولار أمريكى|دولار امريكى|دولار|دولارًا|\$|USD|united states dollar|dollar)\b",
+            "AED": r"\b(درهم اماراتي|درهم إماراتي|درهم اماراتى|درهم إماراتى|درهم|د\.إ|AED|emirates dirham|emirate dirham|dirham)\b",
+            "EGP": r"\b(جنيه مصري|جنيه مصرى|جنيه|ج\.م|£|egyptian pound|pound|le|LE|EGP)\b",
+        }
 
     def predict(
         self, input_query, *args: Any, **kwds: Any
@@ -114,6 +120,16 @@ class DucklingHTTPModel(BaseModel):
                 )
             if price_extraction_result.unit == "unknown":
                 price_extraction_result.unit = ""
+            extraction_results.sub_category_extraction = " ".join(
+                extraction_results.sub_category_extraction.split()
+            )
+            for currency, cur_pattern in self.currency_pattern_map.items():
+                currency_matches = re.findall(
+                    cur_pattern, price_extraction_result.unit, re.IGNORECASE
+                )
+                if len(currency_matches):
+                    price_extraction_result.unit = currency
+
         return extraction_results
 
     def payload(self, input_query: str, locale: str) -> Dict[str, Union[List, str]]:
