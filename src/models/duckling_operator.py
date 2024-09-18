@@ -86,7 +86,13 @@ class BertOperatorModel(BaseOperatorModel):
         )
         model.eval()
         model.load_state_dict(
-            torch.load(os.path.join(model_ckpt_path, "bert_classifier.pth"))
+            torch.load(
+                os.path.join(
+                    model_ckpt_path,
+                    "bert_classifier.pth",
+                ),
+                map_location=self._device,
+            )
         )
         return model
 
