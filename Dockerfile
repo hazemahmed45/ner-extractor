@@ -9,6 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./src/ ./src
 COPY ./.env/ ./.env
+COPY ./ckpt/ ./ckpt
 
 ENV API_HOST=0.0.0.0
 ENV API_PORT=8080
