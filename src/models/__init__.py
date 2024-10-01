@@ -8,6 +8,11 @@ from src.models.duckling_operator import (
     BertOperatorModel,
     FasttextOperatorModel,
 )
+from src.models.duckling_operator_brand_category import (
+    DucklingHTTPBertNERModel,
+    BertClassifierModel,
+    BertOperatorModel as BertNEROperatorModel,
+)
 from src.misc.settings import ApiSettings
 from src.enum import ModelTypes, DucklingDimensionTypes, OperatorModelTypes
 from src.misc.exceptions import ModelTypeError
@@ -42,6 +47,23 @@ class ModelBuilder:
                     DucklingDimensionTypes.AMOUNT_OF_MONEY,
                 ],
                 operator_model=operator_model,
+            )
+        elif settings.model_type == ModelTypes.DUCKLING_BERT_NER:
+            return DucklingHTTPBertNERModel(
+                duckling_host=settings.duckling_host,
+                duckling_port=settings.duckling_port,
+                dim_types=[
+                    DucklingDimensionTypes.AMOUNT_OF_MONEY,
+                ],
+                operator_model=BertNEROperatorModel(
+                    model_ckpt_path=os.path.join("ckpt", "bert_operator")
+                ),
+                brand_model=BertClassifierModel(
+                    model_ckpt_path=os.path.join("ckpt", "bert_brands")
+                ),
+                category_model=BertClassifierModel(
+                    model_ckpt_path=os.path.join("ckpt", "bert_category")
+                ),
             )
         else:
             raise ModelTypeError("model type is not registered")

@@ -17,6 +17,7 @@ class DucklingDimensionTypes(Enum):
 class ModelTypes(Enum):
     DUCKLING = "duckling"
     DUCKLING_OPERATOR = "duckling_operator"
+    DUCKLING_BERT_NER = "duckling_bert_ner"
     T5_NER = "t5_ner"
 
 
